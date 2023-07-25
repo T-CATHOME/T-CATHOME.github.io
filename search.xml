@@ -5,11 +5,19 @@
     
     <entry>
       <title>安卓正常运行瓦尔基里模组</title>
-      <link href="/2023/07/25/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/"/>
-      <url>/2023/07/25/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/</url>
+      <link href="/2023/07/26/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/"/>
+      <url>/2023/07/26/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/</url>
       
         <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> 众所周知，在安卓poajv里瓦尔基里mod会禁用物理引擎，导致玩家只能看着实体化的方块杵在原地。所以，为了解决这个问题，本教程诞生了。实际上本教程运用了一些取巧的方法。但确实做到了只用手机运行瓦尔基。<br>  虽然瓦尔基里无法在安卓本地运行物理系统，但我发现，如果使用poajv与电脑端可联机，便可使用物理系统，于是我便试了在服务器中能不能运行瓦尔基里的物理系统，结果非常amazing，成功运行了。</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>  通过在手机上开服务器，pojav连接服务器来间接运行物理系统。（所以瓦尔基里实际上是运行在服务器上的，这也是我说取巧的原因）</p><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h3 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h3><p>①一台性能足够的手机或两台性能一般的手机。（因为服务器如果和poajv运行在同一设备，那么压力会很大，所以建议将服务器单独放在另一设备运行）<br>②termux app（用来运行服务器下载连接:）<br>minecraft forge&#x2F;fabric服务端（下载教程见下）</p><h3 id="服务端下载"><a href="#服务端下载" class="headerlink" title="服务端下载:"></a>服务端下载:</h3><p>forge:前往此链接<a href="https://files.minecraftforge.net/net/minecraftforge/forge/">https://files.minecraftforge.net/net/minecraftforge/forge/</a> 下载对应版本的forge安装器，随后在pojav安装.jar</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 我的世界 </category>
+          
+      </categories>
       
       
         <tags>
@@ -34,12 +42,20 @@
         <content type="html"><![CDATA[<h2 id="Hi-welcome-to-my-blog-欢迎来的我的博客。"><a href="#Hi-welcome-to-my-blog-欢迎来的我的博客。" class="headerlink" title=" **  Hi,welcome to my blog,欢迎来的我的博客。 **  "></a> **  Hi,welcome to my blog,欢迎来的我的博客。 **  </h2><hr><h1 id="自述"><a href="#自述" class="headerlink" title="自述"></a>自述</h1><pre><code>   本人是纯纯的福瑞哦~\(≧▽≦)/~     福瑞是指furry啦，就是毛茸茸的意思了，所以喜福瑞  等于喜欢毛茸茸的小动物哦ꉂ(ˊᗜˋ*)。还请大家不要嫌弃我 。啦(σ≧︎▽︎≦︎)σ。</code></pre><h1 id="爱好"><a href="#爱好" class="headerlink" title="爱好"></a>爱好</h1><hr><pre><code>   我的爱好吗？(*╹▽╹*)除了福瑞的话，应该还有刷   机和探索新知?学科的话英语数学物理的很爱啦(๑`･ᴗ･´๑)  不过主要还是福瑞最喜欢了ε٩(๑&gt; ₃ &lt;)۶з</code></pre><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><pre><code>   唉 ヽ(°∀°)ﾉ想和我玩吗？不知道怎么找到我?没关  系，来QQ找我就可以啦 (ૢ˃ꌂ˂⁎)QQ:3618273997</code></pre><h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><hr><pre><code>   和大家见个面吧！૮₍♡&gt;𖥦&lt; ₎ა</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
+      
       
         <tags>
             
             <tag> furry </tag>
             
             <tag> 福瑞 </tag>
+            
+            <tag> 日常 </tag>
             
         </tags>
       

@@ -5,10 +5,10 @@
     
     <entry>
       <title>安卓正常运行瓦尔基里模组</title>
-      <link href="/2023/07/26/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/"/>
-      <url>/2023/07/26/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/</url>
+      <link href="/2023/07/28/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/"/>
+      <url>/2023/07/28/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/</url>
       
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> 众所周知，在安卓poajv里瓦尔基里mod会禁用物理引擎，导致玩家只能看着实体化的方块杵在原地。所以，为了解决这个问题，本教程诞生了。实际上本教程运用了一些取巧的方法。但确实做到了只用手机运行瓦尔基。<br>  虽然瓦尔基里无法在安卓本地运行物理系统，但我发现，如果使用poajv与电脑端可联机，便可使用物理系统，于是我便试了在服务器中能不能运行瓦尔基里的物理系统，结果非常amazing，成功运行了。</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>  通过在手机上开服务器，pojav连接服务器来间接运行物理系统。（所以瓦尔基里实际上是运行在服务器上的，这也是我说取巧的原因）</p><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h3 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h3><p>①一台性能足够的手机或两台性能一般的手机。（因为服务器如果和poajv运行在同一设备，那么压力会很大，所以建议将服务器单独放在另一设备运行）<br>②termux app（用来运行服务器下载连接:）<br>minecraft forge&#x2F;fabric服务端（下载教程见下）</p><h3 id="服务端下载"><a href="#服务端下载" class="headerlink" title="服务端下载:"></a>服务端下载:</h3><p>forge:前往此链接<a href="https://files.minecraftforge.net/net/minecraftforge/forge/">https://files.minecraftforge.net/net/minecraftforge/forge/</a> 下载对应版本的forge安装器，随后在pojav安装.jar</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> 众所周知，在安卓poajv里瓦尔基里mod会禁用物理引擎，导致玩家只能看着实体化的方块杵在原地。所以，为了解决这个问题，本教程诞生了。实际上本教程运用了一些取巧的方法。但确实做到了只用手机运行瓦尔基。<br>  虽然瓦尔基里无法在安卓本地运行物理系统，但我发现，如果使用poajv与电脑端可联机，便可使用物理系统，于是我便试了在服务器中能不能运行瓦尔基里的物理系统，结果非常amazing，成功运行了。</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>  通过在手机上开服务器，pojav连接服务器来间接运行物理系统。（所以瓦尔基里实际上是运行在服务器上的，这也是我说取巧的原因）</p><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h3 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h3><p>①一台性能足够的手机或两台性能一般的手机。（因为服务器如果和poajv运行在同一设备，那么压力会很大，所以建议将服务器单独放在另一设备运行）<br>②termux app（用来运行服务器下载连接:）<br>minecraft forge&#x2F;fabric服务端（下载教程见下）</p><h3 id="服务端下载"><a href="#服务端下载" class="headerlink" title="服务端下载:"></a>服务端下载:</h3><p>forge:前往此链接<a href="https://files.minecraftforge.net/net/minecraftforge/forge/">Forge下载</a> 下载对应版本的forge安装器，随后在pojav安装jar文件</p>]]></content>
       
       
       <categories>
@@ -27,6 +27,41 @@
             <tag> mod </tag>
             
             <tag> termux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Color OS运行第三方桌面及主题</title>
+      <link href="/2023/07/28/Color%20OS%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%8C%E9%9D%A2%E5%8F%8A%E4%B8%BB%E9%A2%98/"/>
+      <url>/2023/07/28/Color%20OS%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%8C%E9%9D%A2%E5%8F%8A%E4%B8%BB%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>众多周知，coloros系统会限制第三方桌面的使用,可为让用户深恶痛绝，今天博主发现了一个软件，可以解除这个限制。</p><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><ul><li>首先在<a href="https://source.android.google.cn/docs/compatibility/cts/downloads?hl=zh-cn">cts下载</a> 这个网站下载一个名为<strong>Android x Rx CTS 验证程序 - ARM</strong>的压缩包，其中android x 为自己系统对应的安卓版本号。</li><li>接着打开下载的压缩文件,找到一个名为<strong>cross profile test app</strong>的软件并安装。进入软件后点击中间<strong>open setting</strong>按钮即可解锁第三方桌面。此时软件会崩溃,正常现象。无需重启。</li><li>然后就开始享受吧</li></ul><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项_"></a>注意事项_</h1><h2 id="必看-若无视警告至系统损坏与本人无关"><a href="#必看-若无视警告至系统损坏与本人无关" class="headerlink" title="必看-若无视警告至系统损坏与本人无关"></a>必看-若无视警告至系统损坏与本人无关</h2><ul><li>本软件仅在coloros系统测试过,其余系统可能出现未知bug</li><li><strong>flyme系统严禁使用，会导致锁屏密码改变</strong></li><li>设置部分功能消失,可在搜索栏搜到</li><li>设置部分界面变为类原生</li><li>安装器变为类原生</li><li>后台管理变为类原生 <em>即划掉后台卡片并不能关闭软件</em></li><li>部分设备会无法复原</li><li>待补充</li></ul><h1 id="主题破解"><a href="#主题破解" class="headerlink" title="主题破解"></a>主题破解</h1><p>免费试用主题后，打开设置-应用-应用管理-主题商店,让后点击停用按钮即可</p><h1 id="复原"><a href="#复原" class="headerlink" title="复原"></a>复原</h1><p>卸载软件重启即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+          <category> 系统 </category>
+          
+          <category> coloros </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> coloros </tag>
+            
+            <tag> 破解 </tag>
+            
+            <tag> 主题 </tag>
+            
+            <tag> 桌面 </tag>
             
         </tags>
       

@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>T-CAT-HOME</title><meta name="author" content="T_CAT_KIND"><meta name="copyright" content="T_CAT_KIND"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="T-CAT-HOME">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="T-CAT-HOME">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/76204926_p0.jpg">
+<meta property="article:author" content="T_CAT_KIND">
+<meta property="article:tag" content="furry 福瑞 小猫 小窝 分享 友好 快乐">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/76204926_p0.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'T-CAT-HOME',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(https://www.z4a.net/images/2023/10/01/100487076_p0.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/76204926_p0.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 小窝</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/cm24_105848466.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">T-CAT-HOME</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 小窝</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">T-CAT-HOME</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/T-CATHOME" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:T_CAT_KIND@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/19/%E5%B0%8F%E8%AF%B4%E6%8F%90%E7%BA%B2-%E5%BC%82%E4%BD%93/" title="提纲">提纲</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-18T16:00:00.000Z" title="发表于 2024-02-19 00:00:00">2024-02-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T06:01:17.588Z" title="更新于 2025-02-04 14:01:17">2025-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/%E5%B0%8F%E8%AF%B4/">小说</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/furry/">furry</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A6%8F%E7%91%9E/">福瑞</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2024/02/19/%E5%B0%8F%E8%AF%B4%E6%8F%90%E7%BA%B2-%E5%BC%82%E4%BD%93/#post-comment"><span class="waline-comment-count" data-path="/2024/02/19/%E5%B0%8F%E8%AF%B4%E6%8F%90%E7%BA%B2-%E5%BC%82%E4%BD%93/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">异体之旅第一卷 森林苏醒，化作为猫 了解森林，熟悉身体 暴雨突袭，居所无存 寻找新家，捕杀猎物 克服恐惧，肚子填饱 探寻真相，离开丛林 偶遇猛兽，机智逃离  第二卷 到达城镇，寻找挚友 知晓位置，进行规划 搭上公交，行动开始 千辛万苦，重回旧城 至挚友家，电脑留言 人猫相认，故友重逢 猫语初步，茶馆游乐 同声传译，交流无碍  第三卷 突发抢劫，猫被拐走 警局笔录，昼夜寻猫&#x2F;笼中再醒，知晓局势 发挥才能，逃离牢笼 人兽再遇，众兽分别 下乡放松，奇怪老者 老者离世，再现人形  第四卷 返回城市，初识敌人 确认目标，开始行动   </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/02/01/%E5%88%9D%E6%81%8B/" title="Σ&gt;―(〃°ω°〃)♡→">Σ&gt;―(〃°ω°〃)♡→</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-01-31T16:00:00.000Z" title="发表于 2024-02-01 00:00:00">2024-02-01</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T06:01:17.576Z" title="更新于 2025-02-04 14:01:17">2025-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2024/02/01/%E5%88%9D%E6%81%8B/#post-comment"><span class="waline-comment-count" data-path="/2024/02/01/%E5%88%9D%E6%81%8B/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">SUKI  &amp;&amp; T_CAT </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/16/%E7%94%9F%E6%97%A5,%E5%A5%BD%E8%80%B6/" title="生日，好耶">生日，好耶</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-15T16:00:00.000Z" title="发表于 2023-11-16 00:00:00">2023-11-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T06:01:17.564Z" title="更新于 2025-02-04 14:01:17">2025-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/%E7%BB%98%E7%94%BB/">绘画</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/furry/">furry</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%BB%98%E7%94%BB/">绘画</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/11/16/%E7%94%9F%E6%97%A5,%E5%A5%BD%E8%80%B6/#post-comment"><span class="waline-comment-count" data-path="/2023/11/16/%E7%94%9F%E6%97%A5,%E5%A5%BD%E8%80%B6/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">T_CAT生日诶，虽然还不太会画画，还是努力为自己画了贺图，(∩_∩) </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/22/%E5%BC%80%E5%AD%A6%E5%89%8D%E5%A4%95/" title="开学前夕">开学前夕</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-21T16:00:00.000Z" title="发表于 2023-08-22 00:00:00">2023-08-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T06:01:17.540Z" title="更新于 2025-02-04 14:01:17">2025-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/08/22/%E5%BC%80%E5%AD%A6%E5%89%8D%E5%A4%95/#post-comment"><span class="waline-comment-count" data-path="/2023/08/22/%E5%BC%80%E5%AD%A6%E5%89%8D%E5%A4%95/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">   今天是2023.8.22 22:30 明天我将正式踏入高中生活，那么祝我学业有成吧 (ૢ˃ꌂ˂⁎)   再见了各位 那么T CAT也要离开大家一阵子了不要伤心哦ε٩(๑&gt; ₃ &lt;)۶з   </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/28/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/" title="安卓正常运行瓦尔基里模组">安卓正常运行瓦尔基里模组</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-27T16:00:00.000Z" title="发表于 2023-07-28 00:00:00">2023-07-28</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T06:01:17.628Z" title="更新于 2025-02-04 14:01:17">2025-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">我的世界</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/minecraft/">minecraft</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/mod/">mod</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/termux/">termux</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/07/28/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/#post-comment"><span class="waline-comment-count" data-path="/2023/07/28/%E5%AE%89%E5%8D%93%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E7%93%A6%E5%B0%94%E5%9F%BA%E9%87%8C%E6%A8%A1%E7%BB%84/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">前言 众所周知，在安卓poajv里瓦尔基里mod会禁用物理引擎，导致玩家只能看着实体化的方块杵在原地。所以，为了解决这个问题，本教程诞生了。实际上本教程运用了一些取巧的方法。但确实做到了只用手机运行瓦尔基。  虽然瓦尔基里无法在安卓本地运行物理系统，但我发现，如果使用poajv与电脑端可联机，便可使用物理系统，于是我便试了在服务器中能不能运行瓦尔基里的物理系统，结果非常amazing，成功运行了。 原理  通过在手机上开服务器，pojav连接服务器来间接运行物理系统。（所以瓦尔基里实际上是运行在服务器上的，这也是我说取巧的原因） 教程准备：①一台性能足够的手机或两台性能一般的手机。（因为服务器如果和poajv运行在同一设备，那么压力会很大，所以建议将服务器单独放在另一设备运行）②termux app（用来运行服务器下载连接:）minecraft forge&#x2F;fabric服务端（下载教程见下） 服务端下载:forge:前往此链接Forge下载 下载对应版本的forge安装器，随后在pojav安装jar文件 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/28/Color%20OS%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%8C%E9%9D%A2%E5%8F%8A%E4%B8%BB%E9%A2%98/" title="Color OS运行第三方桌面及主题">Color OS运行第三方桌面及主题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-27T16:00:00.000Z" title="发表于 2023-07-28 00:00:00">2023-07-28</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T06:01:17.660Z" title="更新于 2025-02-04 14:01:17">2025-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E7%B3%BB%E7%BB%9F/">系统</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E7%B3%BB%E7%BB%9F/coloros/">coloros</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/coloros/">coloros</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A0%B4%E8%A7%A3/">破解</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%B8%BB%E9%A2%98/">主题</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%A1%8C%E9%9D%A2/">桌面</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/07/28/Color%20OS%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%8C%E9%9D%A2%E5%8F%8A%E4%B8%BB%E9%A2%98/#post-comment"><span class="waline-comment-count" data-path="/2023/07/28/Color%20OS%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%8C%E9%9D%A2%E5%8F%8A%E4%B8%BB%E9%A2%98/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">前言众多周知，coloros系统会限制第三方桌面的使用,可为让用户深恶痛绝，今天博主发现了一个软件，可以解除这个限制。 教程 首先在cts下载 这个网站下载一个名为Android x Rx CTS 验证程序 - ARM的压缩包，其中android x 为自己系统对应的安卓版本号。 接着打开下载的压缩文件,找到一个名为cross profile test app的软件并安装。进入软件后点击中间open setting按钮即可解锁第三方桌面。此时软件会崩溃,正常现象。无需重启。 然后就开始享受吧  注意事项_必看-若无视警告至系统损坏与本人无关 本软件仅在coloros系统测试过,其余系统可能出现未知bug flyme系统严禁使用，会导致锁屏密码改变 设置部分功能消失,可在搜索栏搜到 设置部分界面变为类原生 安装器变为类原生 后台管理变为类原生 即划掉后台卡片并不能关闭软件 部分设备会无法复原 待补充  主题破解免费试用主题后，打开设置-应用-应用管理-主题商店,让后点击停用按钮即可 复原卸载软件重启即可 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/25/%E6%98%AF%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E5%95%A6%E2%9C%A7(%E2%97%8D%CB%83%CC%B6%E1%97%9C%CB%82%CC%B6%E2%97%8D)%E2%9C%A9/" title="是自我介绍啦✧(◍˃̶ᗜ˂̶◍)✩">是自我介绍啦✧(◍˃̶ᗜ˂̶◍)✩</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-24T16:00:00.000Z" title="发表于 2023-07-25 00:00:00">2023-07-25</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-04T06:01:17.552Z" title="更新于 2025-02-04 14:01:17">2025-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/furry/">furry</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A6%8F%E7%91%9E/">福瑞</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/2023/07/25/%E6%98%AF%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E5%95%A6%E2%9C%A7(%E2%97%8D%CB%83%CC%B6%E1%97%9C%CB%82%CC%B6%E2%97%8D)%E2%9C%A9/#post-comment"><span class="waline-comment-count" data-path="/2023/07/25/%E6%98%AF%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E5%95%A6%E2%9C%A7(%E2%97%8D%CB%83%CC%B6%E1%97%9C%CB%82%CC%B6%E2%97%8D)%E2%9C%A9/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content"> **  Hi,welcome to my blog,欢迎来的我的博客。 **   自述   本人是纯纯的福瑞哦~\(≧▽≦)/~      福瑞是指furry啦，就是毛茸茸的意思了，所以喜福瑞   等于喜欢毛茸茸的小动物哦ꉂ(ˊᗜˋ*)。还请大家不要嫌弃我 。 啦(σ≧︎▽︎≦︎)σ。  爱好    我的爱好吗？(*╹▽╹*)除了福瑞的话，应该还有刷    机和探索新知?学科的话英语数学物理的很爱啦(๑`･ᴗ･´๑)   不过主要还是福瑞最喜欢了ε٩(๑&gt; ₃ &lt;)۶з  联系方式   唉 ヽ(°∀°)ﾉ想和我玩吗？不知道怎么找到我?没关   系，来QQ找我就可以啦 (ૢ˃ꌂ˂⁎)QQ:3618273997  附录    和大家见个面吧！૮₍♡&gt;𖥦&lt; ₎ა  </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/76204926_p0.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">T_CAT_KIND</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/T-CATHOME"><i class="fab fa-github"></i><span>来玩啊(σ≧︎▽︎≦︎)σ。</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/T-CATHOME" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:T_CAT_KIND@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来本喵的小窝ヾ(*´∀｀*)ﾉ</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/20/%E8%AE%B0%E6%A2%A63/" title="故国重游">故国重游</a><time datetime="2025-01-19T16:00:00.000Z" title="发表于 2025-01-20 00:00:00">2025-01-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/07/%E7%89%B9%E6%AE%8A%E6%97%A5%E5%BF%97/" title="发牢骚">发牢骚</a><time datetime="2024-10-06T16:00:00.000Z" title="发表于 2024-10-07 00:00:00">2024-10-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/05/2024.10.5/" title="虚度的国庆">虚度的国庆</a><time datetime="2024-10-04T16:00:00.000Z" title="发表于 2024-10-05 00:00:00">2024-10-05</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">3</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/"><span class="card-category-list-name">我的世界</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/%E7%B3%BB%E7%BB%9F/"><span class="card-category-list-name">系统</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/%E7%B3%BB%E7%BB%9F/coloros/"><span class="card-category-list-name">coloros</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/%E7%B3%BB%E7%BB%9F/miui/"><span class="card-category-list-name">miui</span><span class="card-category-list-count">1</span></a></li></ul></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/"><span class="card-category-list-name">日常</span><span class="card-category-list-count">14</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E5%B0%8F%E8%AF%B4/"><span class="card-category-list-name">小说</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/%E7%BB%98%E7%94%BB/"><span class="card-category-list-name">绘画</span><span class="card-category-list-count">3</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%B0%8F%E7%B1%B3/" style="font-size: 1.1em; color: #999">小米</a> <a href="/tags/termux/" style="font-size: 1.1em; color: #999">termux</a> <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 1.1em; color: #999">刷机</a> <a href="/tags/%E7%A0%B4%E8%A7%A3/" style="font-size: 1.1em; color: #999">破解</a> <a href="/tags/%E8%81%94%E5%8F%91%E7%A7%91/" style="font-size: 1.1em; color: #999">联发科</a> <a href="/tags/%E7%BB%98%E7%94%BB/" style="font-size: 1.26em; color: #999fa8">绘画</a> <a href="/tags/%E6%A1%8C%E9%9D%A2/" style="font-size: 1.1em; color: #999">桌面</a> <a href="/tags/furry/" style="font-size: 1.42em; color: #99a6b7">furry</a> <a href="/tags/minecraft/" style="font-size: 1.1em; color: #999">minecraft</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 1.5em; color: #99a9bf">日常</a> <a href="/tags/%E8%AE%B0%E6%A2%A6/" style="font-size: 1.34em; color: #99a3b0">记梦</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 1.1em; color: #999">主题</a> <a href="/tags/coloros/" style="font-size: 1.1em; color: #999">coloros</a> <a href="/tags/mod/" style="font-size: 1.1em; color: #999">mod</a> <a href="/tags/%E7%A6%8F%E7%91%9E/" style="font-size: 1.18em; color: #999ca1">福瑞</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/01/">
+            <span class="card-archive-list-date">
+              一月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/10/">
+            <span class="card-archive-list-date">
+              十月 2024
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/08/">
+            <span class="card-archive-list-date">
+              八月 2024
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/07/">
+            <span class="card-archive-list-date">
+              七月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/06/">
+            <span class="card-archive-list-date">
+              六月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/05/">
+            <span class="card-archive-list-date">
+              五月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/02/">
+            <span class="card-archive-list-date">
+              二月 2024
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/11/">
+            <span class="card-archive-list-date">
+              十一月 2023
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-02-04T06:06:06.892Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">本喵永远在此等待您的光顾(´つヮ⊂︎)</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><div class="js-pjax"><script>(() => {
+  async function loadWaline () {
+    try {
+      const eleGroup = document.querySelectorAll('#recent-posts .waline-comment-count')
+      const keyArray = Array.from(eleGroup).map(i => i.getAttribute('data-path'))
+
+      const res = await fetch(`https://comment.t-cat-home.top/api/comment?type=count&url=${keyArray}`, { method: 'GET' })
+      const result = await res.json()
+      
+      result.data.forEach((count, index) => {
+        eleGroup[index].textContent = count
+      })
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  window.pjax ? loadWaline() : window.addEventListener('load', loadWaline)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
